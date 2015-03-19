@@ -1,6 +1,7 @@
 $(function () {
 
   var clientID = 'adb0c81ce1f44a2f9608d47937504183';
+  var redirect = 'http://localhost:3030';
 
   var $content = $('#content');
 
@@ -52,7 +53,7 @@ $(function () {
     $link.text('Log in');
 
     // You have to enable implicit OAuth!
-    $link.attr('href', 'https://api.instagram.com/oauth/authorize/?client_id=' + clientID + '&redirect_uri=http://localhost:3030&response_type=token');
+    $link.attr('href', 'https://api.instagram.com/oauth/authorize/?client_id=' + clientID + '&redirect_uri=' + redirect + '&response_type=token');
     $innerContent.append($link)
 
     var $message = $(document.createElement('aside'));
