@@ -1,7 +1,7 @@
 $(function () {
 
-  var clientID = 'adb0c81ce1f44a2f9608d47937504183';
-  var redirect = 'http://localhost:3030';
+  var clientID = 'c5ff468242eb453a9a7a302c3fb55ea8';
+  var redirect = 'http://shovon.github.io/hipstafeed-iat381';
 
   var $content = $('#content');
 
