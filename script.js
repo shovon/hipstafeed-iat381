@@ -31,7 +31,8 @@ $(function () {
     if (token) {
       return new Promise(function (resolve, reject) {
         JSONP('https://api.instagram.com/v1/users/self/feed', {access_token: token}, function (json) {
-          // TODO: not all responses are successful.
+          // TODO: not all responses are successful. Handle cases when the
+          //   response was unsuccessful.
           resolve({
             loggedIn: true,
             feed: json
